@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Etec Ferrúcio Humberto Gazzetta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script >
+
+        function dados(){
+            var nome_val = document.getElementById('name').value;
+            var email_val = document.getElementById('email').value;
+
+            if(nome_val == "" || email_val == ""){
+                alert("Preencha os campos");
+            }else{alert("Obrigado " + nome_val + " pelo feedback!");}
+
+        } 
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+<!--início do menu-->
+    <nav class="navbar navbar-expand-lg navbar-font navbar-custom">
+        <a class="navbar-brand" href="#">ETEC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="cursos.html">Cursos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="paulofreire.html">Paulo Freire</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+<!--fim do menu-->
+
+    <!--começo do conteúdo-->
+    <div class="container-fluid"></div>
+    <br><br>
+    <div class="container">
+        <form id="form1" action="https://formsubmit.co/viniciusrodridev@gmail.com" method="post">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="name">Seu nome<spam>*</spam></label>
+                    <input type="text" class="form-control" placeholder="Nome Sobrenome" name="name" id="name" required=""><br>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="name">Seu e-mail<spam>*</spam></label>
+                    <input type="email" class="form-control" name="email" placeholder="exemplo@gmail.com" id="email" required=""><br>
+                </div>
+            </div>
+            <div class="form-group mt-3">
+                <label for="name">Motivo do contato</label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Motivo do contato" required="">
+            </div>
+            <label for="exampleFormControlTextarea1">Mensagem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Envie sua mensagem aqui" rows="10"></textarea>
+            <div class="text-center">
+                <button type="hidden" class="btn btn-primary" onclick="dados()" name="_next" value="index.html">Enviar</button>
+            </div>
+            
+        </form>
+        
+    </div>
+    <br><br>
+
+    <!--fim do conteúdo-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+<br>
+<hr>
+
+<!--início do rodapé-->
+<div class="footer">
+    <hr>
+    <div class="ancora">
+        <a href="#top"> <img src="img/ancora.png" height="6%" width="6%"> </a>
+    </div>
+    <p>Murilo Machi & Vinícius Silva - &copyTodos os direitos reservados</p>
+    <p>TRABALHO ACADÊMICO - SEM FINS LUCRATIVOS</p>
+</div>
+<!--fim do rodapé-->
+</html>
